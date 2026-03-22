@@ -40,12 +40,12 @@ export function HeroSection() {
               style={{ animationDelay: "500ms" }}
             >
               <Button variant="hero" size="lg" asChild>
-                <a href="#contact">
+                <a href="https://app.nexuscare.io/pilot">
                   Request a Demo <ArrowRight size={18} />
                 </a>
               </Button>
               <Button variant="hero-outline" size="lg" asChild>
-                <a href="https://app.nexuscare.io">Log In to Your Account</a>
+                <a href="https://app.nexuscare.io/login">Log In to Your Account</a>
               </Button>
             </div>
 

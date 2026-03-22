@@ -27,14 +27,14 @@ export function SiteFooter() {
             <h4 className="text-sm font-semibold text-foreground mb-3">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#contact" className="hover:text-foreground transition-colors">Contact</a></li>
-              <li><a href="#contact" className="hover:text-foreground transition-colors">Request Demo</a></li>
+              <li><a href="https://app.nexuscare.io/pilot" className="hover:text-foreground transition-colors">Request Demo</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-3">Access</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="https://app.nexuscare.io" className="hover:text-foreground transition-colors">Customer Login</a></li>
+              <li><a href="https://app.nexuscare.io/login" className="hover:text-foreground transition-colors">Customer Login</a></li>
               <li><a href="https://staff.nexuscare.io" className="hover:text-foreground transition-colors">Staff Portal</a></li>
             </ul>
           </div>

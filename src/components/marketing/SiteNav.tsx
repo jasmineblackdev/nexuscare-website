@@ -47,10 +47,10 @@ export function SiteNav() {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" size="sm" asChild>
-            <a href="https://app.nexuscare.io">Log In</a>
+            <a href="https://app.nexuscare.io/login">Log In</a>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <a href="#contact">Request Demo</a>
+            <a href="https://app.nexuscare.io/pilot">Request Demo</a>
           </Button>
         </div>
 
@@ -77,10 +77,10 @@ export function SiteNav() {
           ))}
           <div className="mt-3 flex flex-col gap-2">
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://app.nexuscare.io">Log In</a>
+              <a href="https://app.nexuscare.io/login">Log In</a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="#contact">Request Demo</a>
+              <a href="https://app.nexuscare.io/pilot">Request Demo</a>
             </Button>
           </div>
         </div>
