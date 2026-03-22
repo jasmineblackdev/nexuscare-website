@@ -6,45 +6,45 @@
 
 @layer base {
   :root {
-    --background: 205 50% 97%;
-    --foreground: 210 28% 16%;
+    --background: 206 54% 97%;     /* #F5F9FC */
+    --foreground: 210 29% 16%;     /* #1E2A36 */
 
     --card: 0 0% 100%;
-    --card-foreground: 210 28% 16%;
+    --card-foreground: 210 29% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 28% 16%;
+    --popover-foreground: 210 29% 16%;
 
-    --primary: 207 72% 22%;
+    --primary: 209 81% 22%;        /* #0B3A66 deep navy */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 205 50% 97%;
-    --secondary-foreground: 210 28% 16%;
+    --secondary: 206 54% 97%;
+    --secondary-foreground: 210 29% 16%;
 
-    --muted: 207 30% 92%;
-    --muted-foreground: 210 15% 42%;
+    --muted: 207 37% 92%;
+    --muted-foreground: 210 20% 42%;
 
-    --accent: 184 77% 40%;
+    --accent: 185 77% 40%;         /* #18A7B5 teal */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 207 30% 85%;
-    --input: 207 30% 85%;
-    --ring: 184 77% 40%;
+    --border: 207 37% 88%;         /* #D6E2EC */
+    --input: 207 37% 88%;
+    --ring: 185 77% 40%;           /* #18A7B5 */
 
     --radius: 0.5rem;
 
     /* NexusCare brand tokens */
-    --nc-navy: 207 72% 22%;
-    --nc-teal: 184 77% 40%;
-    --nc-teal-light: 184 60% 50%;
-    --nc-sky: 205 50% 97%;
-    --nc-warm: 205 30% 96%;
-    --nc-slate: 207 30% 92%;
-    --nc-text: 210 28% 16%;
-    --nc-border: 207 30% 85%;
+    --nc-navy: 209 81% 22%;        /* #0B3A66 */
+    --nc-teal: 185 77% 40%;        /* #18A7B5 */
+    --nc-teal-light: 185 60% 50%;
+    --nc-sky: 206 54% 97%;         /* #F5F9FC */
+    --nc-warm: 206 30% 96%;
+    --nc-slate: 207 37% 92%;
+    --nc-text: 210 29% 16%;        /* #1E2A36 */
+    --nc-border: 207 37% 88%;      /* #D6E2EC */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

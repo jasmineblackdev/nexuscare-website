@@ -1,11 +1,13 @@
+import logo from "@/assets/logo.png";
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-card py-12">
       <div className="nc-container">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <a href="/" className="flex items-center gap-2 text-lg font-bold text-foreground mb-3">
-              NexusCare
+            <a href="/" className="flex items-center mb-3">
+              <img src={logo} alt="NexusCare" className="h-10 w-auto" />
             </a>
             <p className="text-sm text-muted-foreground text-pretty">
               Healthcare referral coordination for senior living operators and admissions teams.
@@ -41,8 +43,8 @@ export function SiteFooter() {
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} NexusCare. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="mailto:hello@nexuscare.io?subject=Privacy Policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="mailto:hello@nexuscare.io?subject=Terms of Service" className="hover:text-foreground transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
