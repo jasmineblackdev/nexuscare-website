@@ -26,7 +26,7 @@ export function SiteFooter() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-3">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#contact" className="hover:text-foreground transition-colors">Contact</a></li>
+              <li><a href="mailto:hello@nexuscare.io" className="hover:text-foreground transition-colors">Contact</a></li>
               <li><a href="https://app.nexuscare.io/pilot" className="hover:text-foreground transition-colors">Request Demo</a></li>
             </ul>
           </div>
