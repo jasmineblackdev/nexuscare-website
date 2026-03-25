@@ -43,8 +43,8 @@ export function SiteFooter() {
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} NexusCare. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="mailto:hello@nexuscare.io?subject=Privacy Policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="mailto:hello@nexuscare.io?subject=Terms of Service" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" className="hover:text-foreground transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
