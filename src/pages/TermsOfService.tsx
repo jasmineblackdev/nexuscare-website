@@ -18,6 +18,7 @@ const sections = [
   { id: "liability", label: "Limitation of Liability" },
   { id: "indemnification", label: "Indemnification" },
   { id: "termination", label: "Termination" },
+  { id: "force-majeure", label: "Force Majeure" },
   { id: "governing-law", label: "Governing Law" },
   { id: "changes", label: "Changes to Terms" },
   { id: "contact", label: "Contact" },
@@ -79,7 +80,22 @@ export default function TermsOfService() {
                 NexusCare provides a software-as-a-service (SaaS) platform that enables senior living operators, admissions directors, intake coordinators, and regional teams to manage patient referral workflows, prior authorization tracking, census data, and admissions coordination.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                NexusCare reserves the right to modify, suspend, or discontinue any part of the Service at any time, with or without notice. We will make reasonable efforts to provide advance notice of material changes. NexusCare is not liable to you or any third party for any modification, suspension, or discontinuation of the Service.
+                NexusCare reserves the right to modify, suspend, or discontinue any part of the Service at any time. We will make reasonable efforts to provide advance notice of material changes. NexusCare is not liable to you or any third party for any modification, suspension, or discontinuation of the Service.
+              </p>
+
+              <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Service Availability</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                NexusCare will use commercially reasonable efforts to make the Service available. The Service may be temporarily unavailable due to scheduled maintenance, emergency updates, infrastructure events, or circumstances outside NexusCare's control. NexusCare will endeavor to provide advance notice of scheduled maintenance where practicable. Temporary unavailability does not constitute a breach of these Terms.
+              </p>
+
+              <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Feature Evolution</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                NexusCare continuously develops and improves the platform. We may introduce new features, modify existing features, or discontinue features that are no longer supported. Features designated as "beta," "experimental," or "preview" are provided without warranty of completeness or reliability and may be changed or removed at any time. Feedback submitted during beta feature access may be used by NexusCare to improve the platform without obligation or compensation.
+              </p>
+
+              <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Third-Party Services</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                The Service may integrate with or depend upon third-party platforms, APIs, or services, including electronic health record systems, referral networks, cloud infrastructure providers, and authentication services. NexusCare does not control these third-party services and is not responsible for their availability, accuracy, or performance. Outages, errors, or data issues originating from third-party systems are outside NexusCare's control and do not constitute a breach of these Terms. Your use of any third-party services integrated with NexusCare is subject to the terms and privacy policies of those third parties.
               </p>
             </section>
 
@@ -96,6 +112,11 @@ export default function TermsOfService() {
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-3">
                 NexusCare reserves the right to suspend or terminate accounts that violate these Terms, exhibit suspicious activity, or are found to be inactive for extended periods.
+              </p>
+
+              <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Security Suspension</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                NexusCare reserves the right to temporarily suspend access to the Service, without prior notice, if we detect or reasonably suspect: unauthorized access attempts, credential compromise, misuse of PHI, activity that could harm other customers or the platform, or violations of applicable law. NexusCare will notify the account administrator as soon as reasonably practicable and will work in good faith to restore access once the security concern is resolved. Suspension under this provision does not constitute termination and does not affect your payment obligations.
               </p>
             </section>
 
@@ -133,11 +154,18 @@ export default function TermsOfService() {
                 <li>Obtaining any required patient authorizations before inputting PHI</li>
                 <li>Configuring access controls to limit data access to authorized personnel</li>
                 <li>Reporting any suspected breaches involving PHI to NexusCare promptly</li>
+                <li>Promptly deprovisioning user accounts when employees or contractors leave or change roles</li>
+                <li>Ensuring the Service is accessed only from reasonably secured devices and networks</li>
+                <li>Maintaining device-level security controls (such as screen locks and endpoint protection) on devices used to access PHI through the Service</li>
+                <li>Not sharing login credentials or enabling access by individuals beyond those authorized under your BAA</li>
               </ul>
 
-              <h3 className="text-base font-semibold text-foreground mt-5 mb-2">No Medical Advice</h3>
+              <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Decision Support & No Professional Advice</h3>
               <p className="text-muted-foreground leading-relaxed">
-                NexusCare is a workflow and coordination platform. It does not provide medical, clinical, legal, or compliance advice. Clinical and admission decisions remain the sole responsibility of licensed healthcare professionals at your organization.
+                NexusCare is a workflow coordination and data management platform. Features including referral analytics, prioritization indicators, census dashboards, and workflow automation are operational tools designed to support — not replace — the professional judgment of licensed healthcare personnel.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                NexusCare does not provide medical, clinical, legal, compliance, or financial advice. Outputs generated by the platform (including analytics, alerts, scores, or prioritization indicators) are informational only. All clinical and admissions decisions remain the sole responsibility of qualified professionals at your organization. NexusCare shall not be liable for outcomes resulting from decisions made based on platform output.
               </p>
             </section>
 
@@ -154,7 +182,7 @@ export default function TermsOfService() {
                 <li>Pilot programs do not automatically convert to paid subscriptions; you will receive advance notice before any billing begins</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                Data entered during a Pilot will be retained for the duration of the pilot period. At the conclusion of the pilot, you may request an export of your organization's data before deletion.
+                Data entered during a Pilot will be retained for the duration of the pilot period. At the conclusion of the pilot, you may request an export of your organization's data in a standard machine-readable format (such as CSV or JSON) where technically feasible, before deletion.
               </p>
             </section>
 
@@ -179,6 +207,9 @@ export default function TermsOfService() {
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
                 <strong>Your data:</strong> You retain ownership of all data your organization inputs into the Service, including patient records, workflow data, and organizational content. You grant NexusCare a limited license to store, process, and display your data solely to provide the Service to you.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                <strong>Aggregated data:</strong> NexusCare may generate and use aggregated, de-identified data derived from your use of the Service for purposes of improving the platform, developing product features, and generating anonymized industry insights. Such aggregated data will not identify your organization or any individual patient and will not constitute PHI. NexusCare retains all rights to such aggregated data.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
                 <strong>Feedback:</strong> If you provide suggestions, feedback, or ideas about the Service, you grant NexusCare a royalty-free, worldwide, perpetual license to use that feedback without obligation or compensation to you.
@@ -234,7 +265,17 @@ export default function TermsOfService() {
                 Upon termination, your right to use the Service ceases immediately. Provisions of these Terms that by their nature should survive termination shall survive, including intellectual property, confidentiality, disclaimers, limitation of liability, and governing law.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                You may request export of your organization's data within 30 days of termination. After 90 days, NexusCare may permanently delete your data in accordance with our data retention policy and applicable law.
+                You may request export of your organization's data within 30 days of termination. NexusCare will provide data exports in a standard machine-readable format (such as CSV or JSON) where technically feasible. After 90 days following termination, NexusCare may permanently delete your data in accordance with our data retention policy and applicable law.
+              </p>
+            </section>
+
+            <section id="force-majeure" className="mb-10">
+              <h2 className="text-xl font-bold text-foreground mb-3">Force Majeure</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                NexusCare shall not be liable for any failure or delay in performing its obligations under these Terms where such failure or delay results from causes beyond NexusCare's reasonable control, including without limitation: acts of God, natural disasters, fire, flood, pandemic, internet or telecommunications failures, cloud infrastructure outages, denial-of-service attacks or other cyberattacks, government orders or actions, labor disputes, or other events of force majeure.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                NexusCare will use commercially reasonable efforts to resume performance as soon as practicable following a force majeure event and will notify affected customers of material service disruptions and expected timelines where possible.
               </p>
             </section>
 
@@ -263,10 +304,17 @@ export default function TermsOfService() {
               <p className="text-muted-foreground leading-relaxed">
                 If you have questions about these Terms or wish to report a violation, please contact us:
               </p>
-              <div className="mt-4 p-4 rounded-lg bg-card border border-border">
-                <p className="font-semibold text-foreground">NexusCare</p>
-                <p className="text-muted-foreground text-sm mt-1">Email: <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a></p>
-                <p className="text-muted-foreground text-sm">United States</p>
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-lg bg-card border border-border">
+                  <p className="font-semibold text-foreground text-sm">General &amp; Legal Inquiries</p>
+                  <p className="text-muted-foreground text-sm mt-1">Email: <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a></p>
+                  <p className="text-muted-foreground text-sm">United States</p>
+                </div>
+                <div className="p-4 rounded-lg bg-card border border-border">
+                  <p className="font-semibold text-foreground text-sm">Security &amp; Terms Violations</p>
+                  <p className="text-muted-foreground text-sm mt-1">Email: <a href="mailto:security@nexuscare.io" className="text-accent hover:underline">security@nexuscare.io</a></p>
+                  <p className="text-muted-foreground text-sm">For urgent security concerns</p>
+                </div>
               </div>
             </section>
 
