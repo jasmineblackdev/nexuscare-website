@@ -50,7 +50,7 @@ export function SiteNav() {
             <a href="https://app.nexuscare.io/login">Log In</a>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <a href="#contact">Request Demo</a>
+            <a href="#get-started">Request Demo</a>
           </Button>
         </div>
 
@@ -80,7 +80,7 @@ export function SiteNav() {
               <a href="https://app.nexuscare.io/login">Log In</a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="#contact">Request Demo</a>
+              <a href="#get-started">Request Demo</a>
             </Button>
           </div>
         </div>

@@ -40,7 +40,7 @@ export function HeroSection() {
               style={{ animationDelay: "500ms" }}
             >
               <Button variant="hero" size="lg" asChild>
-                <a href="#contact">
+                <a href="#get-started">
                   Request a Demo <ArrowRight size={18} />
                 </a>
               </Button>
