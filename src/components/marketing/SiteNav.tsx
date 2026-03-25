@@ -7,7 +7,7 @@ const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Features", href: "#features" },
   { label: "Who It's For", href: "#audience" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "#get-started" },
 ];
 
 export function SiteNav() {

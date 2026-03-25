@@ -151,6 +151,14 @@ export function GetStartedSection() {
                     {loading ? "Sending…" : <><span>Request Demo</span> <ArrowRight size={18} /></>}
                   </Button>
                   <p className="text-center text-xs text-muted-foreground">Free pilot · No credit card required</p>
+                  <div className="border-t border-border pt-4 text-center">
+                    <p className="text-xs text-muted-foreground">
+                      Just have a question?{" "}
+                      <a href="mailto:hello@nexuscare.io" className="font-medium text-accent hover:underline">
+                        hello@nexuscare.io
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </form>
             )}
