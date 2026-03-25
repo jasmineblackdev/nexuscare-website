@@ -6,6 +6,7 @@ const EFFECTIVE_DATE = "March 24, 2026";
 
 const sections = [
   { id: "overview", label: "Overview" },
+  { id: "scope", label: "Who This Policy Applies To" },
   { id: "information-collected", label: "Information We Collect" },
   { id: "phi", label: "Protected Health Information" },
   { id: "how-we-use", label: "How We Use Information" },
@@ -15,6 +16,8 @@ const sections = [
   { id: "rights", label: "Your Rights" },
   { id: "hipaa", label: "HIPAA Compliance" },
   { id: "cookies", label: "Cookies & Analytics" },
+  { id: "children", label: "Children's Privacy" },
+  { id: "international", label: "International Data" },
   { id: "changes", label: "Policy Changes" },
   { id: "contact", label: "Contact Us" },
 ];
@@ -69,6 +72,33 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
+            <section id="scope" className="mb-10">
+              <h2 className="text-xl font-bold text-foreground mb-3">Who This Policy Applies To</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">This Privacy Policy applies to multiple categories of individuals who interact with NexusCare:</p>
+              <ul className="space-y-3">
+                <li className="flex gap-3">
+                  <span className="font-semibold text-foreground text-sm shrink-0 w-44">Website visitors</span>
+                  <span className="text-muted-foreground text-sm">Individuals browsing nexuscare.io who have not created an account. We collect minimal data (see Cookies & Analytics).</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-foreground text-sm shrink-0 w-44">Demo requesters</span>
+                  <span className="text-muted-foreground text-sm">Individuals who submit a contact or demo request form. We use this information solely to respond to the inquiry.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-foreground text-sm shrink-0 w-44">Customer organizations</span>
+                  <span className="text-muted-foreground text-sm">Organizations that have contracted with NexusCare to use the Service. Account, billing, and configuration data is collected and managed at the organization level.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-foreground text-sm shrink-0 w-44">Authorized users</span>
+                  <span className="text-muted-foreground text-sm">Employees or contractors of a customer organization who have been granted platform access by an administrator. User-level profile and activity data is associated with the organization's account.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-foreground text-sm shrink-0 w-44">Patients / PHI subjects</span>
+                  <span className="text-muted-foreground text-sm">Individuals whose Protected Health Information may be entered into the platform by a customer organization. NexusCare processes this data solely as a Business Associate on behalf of the customer (the Covered Entity). These individuals are not NexusCare's direct customers. Patient PHI requests should be directed to the applicable healthcare organization.</span>
+                </li>
+              </ul>
+            </section>
+
             <section id="information-collected" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-3">Information We Collect</h2>
 
@@ -105,7 +135,7 @@ export default function PrivacyPolicy() {
                 NexusCare acts as a <strong>Business Associate</strong> when it processes PHI on behalf of a Covered Entity. Before PHI may be entered into the Service, your organization must execute a <strong>Business Associate Agreement (BAA)</strong> with NexusCare. Please contact <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a> to obtain a BAA.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                PHI is stored with encryption at rest and in transit and is logically isolated by organization. NexusCare employees do not access PHI except as required to provide technical support, with appropriate authorization controls in place.
+                PHI is stored with encryption at rest and in transit and is logically isolated by organization. NexusCare personnel do not access PHI except as required to provide contracted technical support. Such access is subject to role-based controls, internal authorization requirements, and audit logging.
               </p>
             </section>
 
@@ -131,8 +161,37 @@ export default function PrivacyPolicy() {
               <p className="text-muted-foreground leading-relaxed">We may share information in the following limited circumstances:</p>
 
               <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Subprocessors</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We use trusted third-party service providers to operate the Service, including cloud infrastructure (Supabase/PostgreSQL), authentication services, and payment processing (Stripe). These providers are contractually bound to protect data and may not use it for their own purposes. Where required, subprocessors with access to PHI execute a BAA with NexusCare.
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                We use trusted third-party service providers to operate the Service. These providers are contractually bound to protect data and may not use it for their own purposes. Where required, subprocessors with access to PHI execute a Business Associate Agreement with NexusCare.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border border-border rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-muted/50">
+                      <th className="text-left px-4 py-2.5 font-semibold text-foreground">Provider</th>
+                      <th className="text-left px-4 py-2.5 font-semibold text-foreground">Category</th>
+                      <th className="text-left px-4 py-2.5 font-semibold text-foreground">Location</th>
+                      <th className="text-left px-4 py-2.5 font-semibold text-foreground">PHI Access</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Supabase</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">Cloud database &amp; infrastructure</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">United States</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">Yes — BAA executed</td>
+                    </tr>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Stripe</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">Payment processing</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">United States</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">No</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                NexusCare may add or replace subprocessors as the Service evolves. We will provide notice of material subprocessor changes through an updated policy or direct customer notification at least 30 days in advance where practicable.
               </p>
 
               <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Within Your Organization</h3>
@@ -147,7 +206,7 @@ export default function PrivacyPolicy() {
 
               <h3 className="text-base font-semibold text-foreground mt-5 mb-2">Business Transfers</h3>
               <p className="text-muted-foreground leading-relaxed">
-                In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify affected users in advance of any such transfer and ensure continued protection of PHI under HIPAA.
+                In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will endeavor to notify affected users prior to any such transfer where permitted by law, and will require that any successor organization provide substantially equivalent protections. PHI will continue to be handled in accordance with HIPAA requirements.
               </p>
             </section>
 
@@ -158,7 +217,7 @@ export default function PrivacyPolicy() {
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 mt-2">
                 <li>TLS encryption for all data in transit</li>
-                <li>AES-256 encryption for data at rest</li>
+                <li>Industry-standard encryption for data at rest (currently AES-256)</li>
                 <li>Row-level security policies enforcing org-scoped data isolation</li>
                 <li>Multi-factor authentication support</li>
                 <li>Account lockout and brute-force protection</li>
@@ -172,11 +231,43 @@ export default function PrivacyPolicy() {
 
             <section id="retention" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-3">Data Retention</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We retain account and organizational data for as long as your account is active, and for a reasonable period thereafter to comply with legal obligations or resolve disputes. PHI entered into the platform is retained for the duration of your subscription agreement unless earlier deletion is requested.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We retain data for as long as necessary to provide the Service, comply with legal obligations, and resolve disputes. The following schedule applies to different categories of data:
               </p>
-              <p className="text-muted-foreground leading-relaxed mt-3">
-                Upon termination of your subscription, you may request export of your organization's data. Following a 90-day wind-down period, data will be deleted from production systems in accordance with HIPAA requirements. Backups are purged on a rolling schedule.
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm border border-border rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-muted/50">
+                      <th className="text-left px-4 py-2.5 font-semibold text-foreground">Data Category</th>
+                      <th className="text-left px-4 py-2.5 font-semibold text-foreground">Retention Period</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Account &amp; user profile data</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">Duration of subscription + 90 days</td>
+                    </tr>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Referral workflow data (including PHI)</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">Duration of subscription + 90-day wind-down</td>
+                    </tr>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Audit logs</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">6 years (aligned with HIPAA documentation standards)</td>
+                    </tr>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Billing records</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">7 years (standard financial record requirement)</td>
+                    </tr>
+                    <tr className="border-t border-border">
+                      <td className="px-4 py-2.5 text-muted-foreground">Database backups</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">Rolling 30-day schedule; purged thereafter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Upon termination of your subscription, you may request export of your organization's data. Following the 90-day wind-down period, data will be deleted from production systems in accordance with HIPAA requirements. A certificate of destruction is available upon request.
               </p>
             </section>
 
@@ -194,7 +285,7 @@ export default function PrivacyPolicy() {
                 For requests related to PHI, please note that NexusCare processes PHI as a Business Associate on behalf of your organization (the Covered Entity). Requests from patients regarding their own PHI should be directed to the applicable healthcare organization, not to NexusCare.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                To exercise your rights regarding your account data, contact <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a>.
+                To exercise your rights regarding your account data, contact <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a>. We will respond to verifiable requests within 30 days. We may extend this period by an additional 30 days where reasonably necessary, in which case we will notify you of the extension and the reason.
               </p>
             </section>
 
@@ -221,6 +312,20 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
+            <section id="children" className="mb-10">
+              <h2 className="text-xl font-bold text-foreground mb-3">Children's Privacy</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                The Service is not directed to individuals under the age of 18 and is intended solely for use by healthcare professionals and organizations. NexusCare does not knowingly collect personal data from children. If we become aware that a child under 18 has provided personal data without verified parental consent, we will promptly delete it. If you believe we have inadvertently collected such information, please contact us at <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a>.
+              </p>
+            </section>
+
+            <section id="international" className="mb-10">
+              <h2 className="text-xl font-bold text-foreground mb-3">International Data</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                NexusCare is operated in the United States and is currently intended for use by US-based organizations. If you access the Service from outside the United States, your information may be transferred to and processed in the United States, where data protection laws may differ from those in your jurisdiction. By using the Service, you acknowledge and consent to this transfer. NexusCare maintains appropriate safeguards for any such transfers consistent with applicable law.
+              </p>
+            </section>
+
             <section id="changes" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-3">Policy Changes</h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -233,10 +338,17 @@ export default function PrivacyPolicy() {
               <p className="text-muted-foreground leading-relaxed">
                 For questions, concerns, or requests related to this Privacy Policy or our data practices, please contact:
               </p>
-              <div className="mt-4 p-4 rounded-lg bg-card border border-border">
-                <p className="font-semibold text-foreground">NexusCare</p>
-                <p className="text-muted-foreground text-sm mt-1">Email: <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a></p>
-                <p className="text-muted-foreground text-sm">United States</p>
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-lg bg-card border border-border">
+                  <p className="font-semibold text-foreground text-sm">General &amp; Privacy Inquiries</p>
+                  <p className="text-muted-foreground text-sm mt-1">Email: <a href="mailto:hello@nexuscare.io" className="text-accent hover:underline">hello@nexuscare.io</a></p>
+                  <p className="text-muted-foreground text-sm">United States</p>
+                </div>
+                <div className="p-4 rounded-lg bg-card border border-border">
+                  <p className="font-semibold text-foreground text-sm">Security Incidents &amp; Vulnerability Reports</p>
+                  <p className="text-muted-foreground text-sm mt-1">Email: <a href="mailto:security@nexuscare.io" className="text-accent hover:underline">security@nexuscare.io</a></p>
+                  <p className="text-muted-foreground text-sm">For urgent breach or security concerns</p>
+                </div>
               </div>
             </section>
 
