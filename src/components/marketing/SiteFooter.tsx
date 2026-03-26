@@ -17,9 +17,9 @@ export function SiteFooter() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-3">Platform</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#features" className="hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="#how-it-works" className="hover:text-foreground transition-colors">How It Works</a></li>
-              <li><a href="#audience" className="hover:text-foreground transition-colors">Who It's For</a></li>
+              <li><a href="/#features" className="hover:text-foreground transition-colors">Features</a></li>
+              <li><a href="/#how-it-works" className="hover:text-foreground transition-colors">How It Works</a></li>
+              <li><a href="/#audience" className="hover:text-foreground transition-colors">Who It's For</a></li>
             </ul>
           </div>
 

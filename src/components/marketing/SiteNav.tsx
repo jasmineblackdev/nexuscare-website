@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Features", href: "#features" },
-  { label: "Who It's For", href: "#audience" },
-  { label: "Contact", href: "#get-started" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Features", href: "/#features" },
+  { label: "Who It's For", href: "/#audience" },
+  { label: "Contact", href: "/#get-started" },
 ];
 
 export function SiteNav() {
@@ -37,7 +37,7 @@ export function SiteNav() {
             <a href="https://app.nexuscare.io/login">Log In</a>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <a href="#get-started">Request Demo</a>
+            <a href="/#get-started">Request Demo</a>
           </Button>
         </div>
 
@@ -67,7 +67,7 @@ export function SiteNav() {
               <a href="https://app.nexuscare.io/login">Log In</a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="#get-started">Request Demo</a>
+              <a href="/#get-started">Request Demo</a>
             </Button>
           </div>
         </div>
