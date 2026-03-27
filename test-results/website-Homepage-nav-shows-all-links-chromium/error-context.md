@@ -1,0 +1,454 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "NexusCare" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "NexusCare" [ref=e7]
+      - navigation [ref=e8]:
+        - link "How It Works" [ref=e9] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Features" [ref=e10] [cursor=pointer]:
+          - /url: "#features"
+        - link "Who It's For" [ref=e11] [cursor=pointer]:
+          - /url: "#who"
+        - link "Pricing" [ref=e12] [cursor=pointer]:
+          - /url: "#pricing"
+      - generic [ref=e13]:
+        - link "Log In" [ref=e14] [cursor=pointer]:
+          - /url: https://app.nexuscare.io/login
+        - link "Request Demo" [ref=e15] [cursor=pointer]:
+          - /url: "#demo"
+  - main [ref=e16]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e25]: Healthcare Referral Intelligence
+        - heading "The referral platform built for senior care admissions teams." [level=1] [ref=e26]:
+          - text: The referral platform
+          - text: built for senior care
+          - text: admissions teams.
+        - paragraph [ref=e27]: NexusCare connects your hospital referral workflow, liaison team, and admissions process in one platform — so you respond faster, coordinate better, and never lose visibility into your census pipeline.
+        - generic [ref=e28]:
+          - link "Request a Demo" [ref=e29] [cursor=pointer]:
+            - /url: "#demo"
+          - link "Log In to Your Account" [ref=e30] [cursor=pointer]:
+            - /url: https://app.nexuscare.io/login
+        - paragraph [ref=e31]: Free plan available. No credit card required.
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - paragraph [ref=e34]: 33%
+          - paragraph [ref=e35]: of referrals lost without the right tools
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: $8.2B
+          - paragraph [ref=e38]: annual industry loss from missed referrals
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: 20–30%
+          - paragraph [ref=e41]: conversion rate improvement with NexusCare
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - paragraph [ref=e46]: The Problem
+        - heading "Senior care teams lose referrals not because they don't care — but because the tools haven't kept up." [level=2] [ref=e47]
+        - paragraph [ref=e48]: Spreadsheets, phone tags, and disconnected EHR workflows mean your team is always reactive. Discharge planners move on. Liaisons can't see what's needed. Admissions directors don't know where a referral stands until it's already gone.
+        - paragraph [ref=e49]: NexusCare changes that. It's the only platform purpose-built to address the full referral journey — from the moment a hospital reaches out to the day a resident moves in.
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - paragraph [ref=e52]: Before NexusCare
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - generic [ref=e55]: ✕
+              - text: Referrals arrive by fax, phone, and email with no central tracking
+            - listitem [ref=e56]:
+              - generic [ref=e57]: ✕
+              - text: Liaisons log visits manually — if they log them at all
+            - listitem [ref=e58]:
+              - generic [ref=e59]: ✕
+              - text: Admissions decisions made without payor mix context
+            - listitem [ref=e60]:
+              - generic [ref=e61]: ✕
+              - text: No visibility into why referrals are lost
+            - listitem [ref=e62]:
+              - generic [ref=e63]: ✕
+              - text: Leadership sees lagging reports, not live data
+        - generic [ref=e64]:
+          - paragraph [ref=e65]: With NexusCare
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - generic [ref=e68]: ✓
+              - text: Every referral tracked from first contact to admission
+            - listitem [ref=e69]:
+              - generic [ref=e70]: ✓
+              - text: Liaisons update status from mobile, in real time
+            - listitem [ref=e71]:
+              - generic [ref=e72]: ✓
+              - text: AI-assisted routing aligned to clinical fit and payor mix
+            - listitem [ref=e73]:
+              - generic [ref=e74]: ✓
+              - text: Win/loss analytics surface patterns you can act on
+            - listitem [ref=e75]:
+              - generic [ref=e76]: ✓
+              - text: Live dashboards for operators, directors, and staff
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: Workflow
+        - heading "How NexusCare Works" [level=2] [ref=e81]
+        - paragraph [ref=e82]: A streamlined workflow that takes every referral from first contact to admitted resident — with full visibility at every step.
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e88]: 🏥
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - heading "Hospital Referral Arrives" [level=3] [ref=e91]
+              - generic [ref=e92]: "01"
+            - paragraph [ref=e93]: A discharge planner contacts your facility. NexusCare captures the referral from any channel — phone, fax, portal, or direct submission — and creates a centralized record your whole team can see.
+        - generic [ref=e94]:
+          - generic [ref=e96]: 📋
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - heading "Intake & Clinical Review" [level=3] [ref=e99]
+              - generic [ref=e100]: "02"
+            - paragraph [ref=e101]: Your admissions team reviews the clinical summary, insurance information, and bed availability in one view. AI-assisted matching surfaces the best placement option based on payor mix and clinical fit.
+        - generic [ref=e102]:
+          - generic [ref=e104]: 📍
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - heading "Liaison Assignment" [level=3] [ref=e107]
+              - generic [ref=e108]: "03"
+            - paragraph [ref=e109]: The right field liaison is assigned and notified instantly on mobile. They can view referral details, attach documents, log hospital visit notes, and update status — all from the NexusCare mobile app.
+        - generic [ref=e110]:
+          - generic [ref=e112]: 🔄
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - heading "Admission Coordination" [level=3] [ref=e115]
+              - generic [ref=e116]: "04"
+            - paragraph [ref=e117]: Authorization tracking, document collection, and cross-team communication happen inside NexusCare. No more chasing paperwork across email threads or missing critical follow-up windows.
+        - generic [ref=e118]:
+          - generic [ref=e120]: 📊
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - heading "Reporting & Visibility" [level=3] [ref=e123]
+              - generic [ref=e124]: "05"
+            - paragraph [ref=e125]: Every admission, every lost referral, every liaison visit is captured and analyzed. Directors and operators get live dashboards showing conversion rates, payor mix trends, and team performance.
+      - generic [ref=e126]:
+        - generic [ref=e127]: Hospital Referral
+        - generic [ref=e128]: →
+        - generic [ref=e129]: Intake & Review
+        - generic [ref=e130]: →
+        - generic [ref=e131]: Liaison Assignment
+        - generic [ref=e132]: →
+        - generic [ref=e133]: Admission Coordination
+        - generic [ref=e134]: →
+        - generic [ref=e135]: Reporting & Visibility
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - paragraph [ref=e139]: Built for Your Team
+        - heading "Every role. One platform." [level=2] [ref=e140]
+        - paragraph [ref=e141]: NexusCare gives every person in your admissions workflow a purpose-built view — not a generic dashboard that doesn't fit how they actually work.
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]: 🏢
+          - heading "Senior Living Operators" [level=3] [ref=e145]
+          - paragraph [ref=e146]: Manage census with confidence.
+          - paragraph [ref=e147]: "\"Flying blind on referral volume, payor mix, and team performance across buildings.\""
+          - paragraph [ref=e148]: See every referral, every liaison, and every admission trend in one place — across your entire portfolio.
+        - generic [ref=e149]:
+          - generic [ref=e150]: 📥
+          - heading "Admissions & Intake Teams" [level=3] [ref=e151]
+          - paragraph [ref=e152]: Respond faster. Win more.
+          - paragraph [ref=e153]: "\"Referrals arrive from too many channels and fall through the cracks before you can act.\""
+          - paragraph [ref=e154]: One inbox for every referral. Real-time alerts. AI-assisted routing so you always know the right next step.
+        - generic [ref=e155]:
+          - generic [ref=e156]: 📱
+          - heading "Liaison Managers & Field Teams" [level=3] [ref=e157]
+          - paragraph [ref=e158]: Coordinate from anywhere.
+          - paragraph [ref=e159]: "\"Liaisons are logging visits on paper or not at all, and managers have no live visibility.\""
+          - paragraph [ref=e160]: Mobile-first tools so liaisons can update status, attach documents, and log visits between appointments.
+        - generic [ref=e161]:
+          - generic [ref=e162]: 📈
+          - heading "Executive Directors" [level=3] [ref=e163]
+          - paragraph [ref=e164]: See the full picture.
+          - paragraph [ref=e165]: "\"Decision-making based on weekly reports that are already out of date by the time you see them.\""
+          - paragraph [ref=e166]: Live dashboards showing census trends, conversion rates, payor mix impact, and team performance.
+        - generic [ref=e167]:
+          - generic [ref=e168]: 🗺️
+          - heading "Regional Leaders" [level=3] [ref=e169]
+          - paragraph [ref=e170]: Oversee every building.
+          - paragraph [ref=e171]: "\"No consistent visibility across facilities — each building operates in its own silo.\""
+          - paragraph [ref=e172]: Portfolio-level reporting with building-by-building drill-down. Spot problems before they become patterns.
+        - generic [ref=e173]:
+          - generic [ref=e174]: 🤝
+          - heading "Healthcare Referral Teams" [level=3] [ref=e175]
+          - paragraph [ref=e176]: Connect your network.
+          - paragraph [ref=e177]: "\"Hospital relationships managed through individual contacts with no institutional memory.\""
+          - paragraph [ref=e178]: Built-in Hospital CRM tracks every discharge planner, social worker, and referral relationship your team has.
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - paragraph [ref=e182]: Platform Features
+        - heading "Everything your admissions team needs. Nothing they don't." [level=2] [ref=e183]:
+          - text: Everything your admissions team needs.
+          - text: Nothing they don't.
+        - paragraph [ref=e184]: 15+ purpose-built features versus 0–3 at legacy tools. NexusCare replaces your disconnected stack with a single, integrated workflow.
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - generic [ref=e187]: 📋
+          - heading "Referral Pipeline Visibility" [level=3] [ref=e188]
+          - paragraph [ref=e189]: Every referral tracked from first contact through intake, review, authorization, and admission — with full history, status, and audit trail.
+        - generic [ref=e190]:
+          - generic [ref=e191]: 📍
+          - heading "Liaison Workflow Coordination" [level=3] [ref=e192]
+          - paragraph [ref=e193]: Assign, track, and communicate with field liaisons in real time. Mobile-first tools let them log visits, attach documents, and update referral status from anywhere.
+        - generic [ref=e194]:
+          - generic [ref=e195]: 🔔
+          - heading "Real-Time Admission Updates" [level=3] [ref=e196]
+          - paragraph [ref=e197]: Live status tracking with automated alerts keeps your team aligned on every active referral — no more calling around to find out where things stand.
+        - generic [ref=e198]:
+          - generic [ref=e199]: 📂
+          - heading "Document Access & Review" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Clinical summaries, insurance cards, and authorization paperwork accessible in one place — by the right people at the right time.
+        - generic [ref=e202]:
+          - generic [ref=e203]: 🏥
+          - heading "Hospital CRM & Relationship Tracking" [level=3] [ref=e204]
+          - paragraph [ref=e205]: Track every referral source, discharge planner, and hospital relationship. Know which contacts send your best referrals and invest your liaison time accordingly.
+        - generic [ref=e206]:
+          - generic [ref=e207]: 📊
+          - heading "Analytics & Team Performance" [level=3] [ref=e208]
+          - paragraph [ref=e209]: Conversion rates, response times, win/loss analysis, and liaison activity — all surfaced in dashboards designed for operators, not IT teams.
+        - generic [ref=e210]:
+          - generic [ref=e211]: 💰
+          - heading "Payor Mix Intelligence" [level=3] [ref=e212]
+          - paragraph [ref=e213]: Understand the revenue impact of every admission decision. AI-assisted payor mix optimization helps you accept the referrals that improve your census quality.
+        - generic [ref=e214]:
+          - generic [ref=e215]: ⚡
+          - heading "AI Referral Routing" [level=3] [ref=e216]
+          - paragraph [ref=e217]: Smart matching surfaces the best placement option for each referral based on clinical fit, available beds, and payor priority. Respond with confidence, not guesswork.
+        - generic [ref=e218]:
+          - generic [ref=e219]: 🔒
+          - heading "HIPAA-Ready & Audit-Logged" [level=3] [ref=e220]
+          - paragraph [ref=e221]: Role-based access control, full audit logging, and encrypted data storage — built for healthcare compliance from the ground up.
+    - generic [ref=e222]:
+      - generic [ref=e224]:
+        - paragraph [ref=e225]: Business Outcomes
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - paragraph [ref=e228]: 20–30%
+            - paragraph [ref=e229]: Conversion Rate Improvement
+            - paragraph [ref=e230]: Teams using NexusCare win more referrals because they respond faster, route smarter, and track every follow-up.
+          - generic [ref=e231]:
+            - paragraph [ref=e232]: 40–60%
+            - paragraph [ref=e233]: More Referral Volume
+            - paragraph [ref=e234]: The Hospital Discharge Network connects your facility directly to discharge planners — increasing inbound referral flow.
+          - generic [ref=e235]:
+            - paragraph [ref=e236]: $487K+
+            - paragraph [ref=e237]: Annual Revenue Recovered
+            - paragraph [ref=e238]: Empty bed tracking surfaces revenue lost to avoidable vacancies, giving leadership the data to act.
+          - generic [ref=e239]:
+            - paragraph [ref=e240]: < 1hr
+            - paragraph [ref=e241]: Average Referral Response Time
+            - paragraph [ref=e242]: Real-time alerts and mobile liaison tools mean your team can respond to new referrals before the competition.
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - heading "Why it matters for your operation" [level=2] [ref=e246]
+          - paragraph [ref=e247]: NexusCare isn't a reporting tool. It's a workflow system that changes how your team operates from day one.
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - heading "Faster Referral Response" [level=3] [ref=e251]
+            - paragraph [ref=e252]: Instant notifications and mobile access mean your team responds in minutes, not hours. First responder wins.
+          - generic [ref=e253]:
+            - heading "Better Admissions Coordination" [level=3] [ref=e255]
+            - paragraph [ref=e256]: Authorization tracking, document collection, and team communication all in one place — no more fragmented workflows.
+          - generic [ref=e257]:
+            - heading "Stronger Liaison Visibility" [level=3] [ref=e259]
+            - paragraph [ref=e260]: Managers see what liaisons are doing in the field, in real time. Every visit logged, every referral touched.
+          - generic [ref=e261]:
+            - heading "Improved Conversion Tracking" [level=3] [ref=e263]
+            - paragraph [ref=e264]: Know exactly where referrals are won or lost. Act on patterns, not gut feelings.
+          - generic [ref=e265]:
+            - heading "More Organized Operations" [level=3] [ref=e267]
+            - paragraph [ref=e268]: Every document, every status update, every note — in one place. New team members get up to speed immediately.
+          - generic [ref=e269]:
+            - heading "Operational Oversight at Scale" [level=3] [ref=e271]
+            - paragraph [ref=e272]: From a single building to a regional portfolio, leadership gets a live view of census health and team performance.
+    - generic [ref=e274]:
+      - generic [ref=e275]:
+        - paragraph [ref=e276]: Pricing
+        - heading "Start free. Scale as you grow." [level=2] [ref=e277]
+        - paragraph [ref=e278]: One price per building. No per-seat fees, no long-term contracts. A free plan to get started today.
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - paragraph [ref=e281]: Bronze
+          - generic [ref=e283]: Free
+          - paragraph [ref=e284]: Forever — no credit card needed
+          - paragraph [ref=e285]: For independent liaisons and small facilities testing the platform.
+          - list [ref=e286]:
+            - listitem [ref=e287]:
+              - generic [ref=e288]: ✓
+              - text: 1 liaison (solo practitioner)
+            - listitem [ref=e289]:
+              - generic [ref=e290]: ✓
+              - text: Basic referral inbox
+            - listitem [ref=e291]:
+              - generic [ref=e292]: ✓
+              - text: Mobile app notifications
+            - listitem [ref=e293]:
+              - generic [ref=e294]: ✓
+              - text: Accept / decline workflow
+            - listitem [ref=e295]:
+              - generic [ref=e296]: ✓
+              - text: Basic analytics
+          - link "Get Started Free" [ref=e297] [cursor=pointer]:
+            - /url: "#demo"
+        - generic [ref=e298]:
+          - generic [ref=e299]: Most Popular
+          - paragraph [ref=e300]: Silver
+          - generic [ref=e302]: $449
+          - paragraph [ref=e303]: per building / month
+          - paragraph [ref=e304]: For single buildings and 1–3 building operators ready to grow referral volume.
+          - list [ref=e305]:
+            - listitem [ref=e306]:
+              - generic [ref=e307]: ✓
+              - text: Everything in Bronze
+            - listitem [ref=e308]:
+              - generic [ref=e309]: ✓
+              - text: CarePort auto-population
+            - listitem [ref=e310]:
+              - generic [ref=e311]: ✓
+              - text: Response time SLA tracking
+            - listitem [ref=e312]:
+              - generic [ref=e313]: ✓
+              - text: Real-time bed availability
+            - listitem [ref=e314]:
+              - generic [ref=e315]: ✓
+              - text: Lost referral analysis
+            - listitem [ref=e316]:
+              - generic [ref=e317]: ✓
+              - text: Insurance verification (100/mo)
+            - listitem [ref=e318]:
+              - generic [ref=e319]: ✓
+              - text: Calendar integration
+            - listitem [ref=e320]:
+              - generic [ref=e321]: ✓
+              - text: Patient SMS reminders
+            - listitem [ref=e322]:
+              - generic [ref=e323]: ✓
+              - text: Standard support
+          - link "Request Demo" [ref=e324] [cursor=pointer]:
+            - /url: "#demo"
+        - generic [ref=e325]:
+          - paragraph [ref=e326]: Gold
+          - generic [ref=e328]: $749
+          - paragraph [ref=e329]: per building / month
+          - paragraph [ref=e330]: For regional operators who need full competitive intelligence and automation.
+          - list [ref=e331]:
+            - listitem [ref=e332]:
+              - generic [ref=e333]: ✓
+              - text: Everything in Silver
+            - listitem [ref=e334]:
+              - generic [ref=e335]: ✓
+              - text: Hospital CRM & relationship tracking
+            - listitem [ref=e336]:
+              - generic [ref=e337]: ✓
+              - text: Liaison visit tracking & ROI reporting
+            - listitem [ref=e338]:
+              - generic [ref=e339]: ✓
+              - text: Automated follow-up sequences
+            - listitem [ref=e340]:
+              - generic [ref=e341]: ✓
+              - text: AI Referral Win Predictor
+            - listitem [ref=e342]:
+              - generic [ref=e343]: ✓
+              - text: Payor mix optimizer
+            - listitem [ref=e344]:
+              - generic [ref=e345]: ✓
+              - text: Empty Bed Revenue Tracker
+            - listitem [ref=e346]:
+              - generic [ref=e347]: ✓
+              - text: Competitive intelligence tools
+            - listitem [ref=e348]:
+              - generic [ref=e349]: ✓
+              - text: Priority support
+          - link "Request Demo" [ref=e350] [cursor=pointer]:
+            - /url: "#demo"
+      - paragraph [ref=e351]: All plans include unlimited referrals, HIPAA-compliant storage, and mobile access. No setup fees. Cancel anytime.
+    - generic [ref=e353]:
+      - generic [ref=e356]:
+        - generic [ref=e357]:
+          - paragraph [ref=e358]: Request a Demo
+          - heading "See NexusCare in action — built around your workflow." [level=2] [ref=e359]
+          - paragraph [ref=e360]: Book a 30-minute live demo. We'll walk through your referral process, show you exactly how NexusCare fits your operation, and answer your questions.
+          - list [ref=e361]:
+            - listitem [ref=e362]: Live walkthrough tailored to your role
+            - listitem [ref=e364]: No commitment or credit card required
+            - listitem [ref=e366]: Response within 1 business day
+            - listitem [ref=e368]: Free plan available to start immediately
+        - generic [ref=e371]:
+          - generic [ref=e372]:
+            - generic [ref=e373]: Full Name
+            - textbox "Jane Smith" [ref=e374]
+          - generic [ref=e375]:
+            - generic [ref=e376]: Organization
+            - textbox "Sunrise Senior Living" [ref=e377]
+          - generic [ref=e378]:
+            - generic [ref=e379]: Work Email *
+            - textbox "jane@yourorg.com" [ref=e380]
+          - button "Request My Demo" [ref=e381] [cursor=pointer]
+          - paragraph [ref=e382]: Your information is never shared or sold.
+      - paragraph [ref=e384]:
+        - text: Already a NexusCare customer?
+        - link "Log In to Your Account →" [ref=e385] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e386]:
+    - generic [ref=e387]:
+      - generic [ref=e388]:
+        - generic [ref=e389]:
+          - img "NexusCare" [ref=e390]
+          - paragraph [ref=e391]: Referral intelligence for senior care operators.
+        - generic [ref=e392]:
+          - paragraph [ref=e393]: Product
+          - list [ref=e394]:
+            - listitem [ref=e395]:
+              - link "Features" [ref=e396] [cursor=pointer]:
+                - /url: "#features"
+            - listitem [ref=e397]:
+              - link "How It Works" [ref=e398] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e399]:
+              - link "Who It's For" [ref=e400] [cursor=pointer]:
+                - /url: "#who"
+            - listitem [ref=e401]:
+              - link "Pricing" [ref=e402] [cursor=pointer]:
+                - /url: "#pricing"
+        - generic [ref=e403]:
+          - paragraph [ref=e404]: Get Started
+          - list [ref=e405]:
+            - listitem [ref=e406]:
+              - link "Request Demo" [ref=e407] [cursor=pointer]:
+                - /url: "#demo"
+            - listitem [ref=e408]:
+              - link "Create Account" [ref=e409] [cursor=pointer]:
+                - /url: https://app.nexuscare.io/signup
+            - listitem [ref=e410]:
+              - link "Client Login" [ref=e411] [cursor=pointer]:
+                - /url: https://app.nexuscare.io/login
+            - listitem [ref=e412]:
+              - link "Pilot Program" [ref=e413] [cursor=pointer]:
+                - /url: https://app.nexuscare.io/pilot
+        - generic [ref=e414]:
+          - paragraph [ref=e415]: Company
+          - list [ref=e416]:
+            - listitem [ref=e417]:
+              - link "Contact Us" [ref=e418] [cursor=pointer]:
+                - /url: mailto:hello@nexuscare.io
+            - listitem [ref=e419]:
+              - link "Support" [ref=e420] [cursor=pointer]:
+                - /url: mailto:hello@nexuscare.io
+            - listitem [ref=e421]:
+              - link "Partnerships" [ref=e422] [cursor=pointer]:
+                - /url: mailto:hello@nexuscare.io?subject=Partnership Inquiry
+      - generic [ref=e423]:
+        - paragraph [ref=e424]: © 2026 NexusCare, LLC. All rights reserved.
+        - generic [ref=e425]:
+          - link "hello@nexuscare.io" [ref=e426] [cursor=pointer]:
+            - /url: mailto:hello@nexuscare.io
+          - generic [ref=e427]: nexuscare.io
+```

@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
 
 const EDGE_FN = "https://wmfluwhzpfuobxyyabjj.supabase.co/functions/v1/submit-pilot-lead";
+
+const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"] as const;
 
 const BENEFITS = [
   "Personalized walkthrough with your team's workflow",
@@ -22,6 +24,31 @@ export function GetStartedSection() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const utmRef = useRef<Record<string, string>>({});
+
+  // Capture UTM params and referrer on mount — persists for the session
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const captured: Record<string, string> = {};
+    for (const key of UTM_KEYS) {
+      const val = params.get(key);
+      if (val) captured[key] = val;
+    }
+    // Also try sessionStorage in case user navigated from another page
+    for (const key of UTM_KEYS) {
+      if (!captured[key]) {
+        const stored = sessionStorage.getItem(key);
+        if (stored) captured[key] = stored;
+      } else {
+        sessionStorage.setItem(key, captured[key]);
+      }
+    }
+    if (params.get("utm_source")) {
+      sessionStorage.setItem("referrer_url", document.referrer || window.location.href);
+    }
+    captured.referrer_url = sessionStorage.getItem("referrer_url") ?? document.referrer ?? "";
+    utmRef.current = captured;
+  }, []);
 
   const set = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm((f) => ({ ...f, [field]: e.target.value }));
@@ -34,7 +61,7 @@ export function GetStartedSection() {
       const res = await fetch(EDGE_FN, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, ...utmRef.current }),
       });
       if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
