@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { SiteNav } from "@/components/marketing/SiteNav";
 import { SiteFooter } from "@/components/marketing/SiteFooter";
+import { SEO } from "@/components/SEO";
 
 const EFFECTIVE_DATE = "March 24, 2026";
 
@@ -31,6 +32,11 @@ export default function TermsOfService() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Terms of Service — NexusCare"
+        description="NexusCare's terms of service govern your use of the platform, including pilot program terms, healthcare data handling, and HIPAA compliance obligations."
+        canonical="https://nexuscare.io/terms-of-service"
+      />
       <SiteNav />
 
       {/* Page header */}

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { SiteNav } from "@/components/marketing/SiteNav";
 import { SiteFooter } from "@/components/marketing/SiteFooter";
+import { SEO } from "@/components/SEO";
 
 const EFFECTIVE_DATE = "March 24, 2026";
 
@@ -29,6 +30,11 @@ export default function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Privacy Policy — NexusCare"
+        description="NexusCare's privacy policy explains how we collect, use, and protect your data, including HIPAA-compliant handling of protected health information."
+        canonical="https://nexuscare.io/privacy-policy"
+      />
       <SiteNav />
 
       {/* Page header */}
