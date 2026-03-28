@@ -20,6 +20,8 @@ export function SiteFooter() {
               <li><a href="/#features" className="hover:text-foreground transition-colors">Features</a></li>
               <li><a href="/#how-it-works" className="hover:text-foreground transition-colors">How It Works</a></li>
               <li><a href="/#audience" className="hover:text-foreground transition-colors">Who It's For</a></li>
+              <li><a href="/integrations" className="hover:text-foreground transition-colors">Integrations</a></li>
+              <li><a href="/pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
             </ul>
           </div>
 
