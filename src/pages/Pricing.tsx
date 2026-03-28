@@ -12,9 +12,9 @@ const plans = [
   {
     name: "Starter",
     badge: null,
-    tagline: "For single-facility operators getting started.",
-    price: "Contact Sales",
-    priceNote: null,
+    tagline: "For operators with 1–2 buildings getting started.",
+    price: "$499",
+    priceNote: "per building / per month",
     cta: "Get Started",
     highlight: false,
     features: {
@@ -46,9 +46,9 @@ const plans = [
   {
     name: "Growth",
     badge: "Most Popular",
-    tagline: "For multi-building operators scaling admissions.",
-    price: "Contact Sales",
-    priceNote: null,
+    tagline: "For multi-building operators scaling admissions. (3–10 buildings)",
+    price: "$399",
+    priceNote: "per building / per month",
     cta: "Talk to Us",
     highlight: true,
     features: {
@@ -80,9 +80,9 @@ const plans = [
   {
     name: "Enterprise",
     badge: null,
-    tagline: "For regional chains and enterprise operators.",
-    price: "Custom",
-    priceNote: "Per-org pricing",
+    tagline: "For regional chains with 11+ buildings.",
+    price: "From $349",
+    priceNote: "per building / per month · custom pricing",
     cta: "Contact Sales",
     highlight: false,
     features: {
@@ -159,7 +159,7 @@ const featureGroups = [
 const faqs = [
   {
     q: "Is there a free trial?",
-    a: "Yes. NexusCare offers a guided pilot program for qualifying operators. Contact us to learn more about getting started.",
+    a: "Yes. NexusCare offers a 90-day guided pilot program for qualifying operators. After the pilot, all your data carries over automatically when you choose a plan — nothing is lost.",
   },
   {
     q: "Can I switch plans later?",
