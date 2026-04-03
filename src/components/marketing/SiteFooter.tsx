@@ -38,6 +38,7 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="https://app.nexuscare.io/login" className="hover:text-foreground transition-colors">Customer Login</a></li>
               <li><a href="https://staff.nexuscare.io" className="hover:text-foreground transition-colors">Staff Portal</a></li>
+              <li><a href="https://liaison.nexuscare.io" className="hover:text-foreground transition-colors">Field Team Login</a></li>
             </ul>
           </div>
         </div>
