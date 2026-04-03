@@ -4,7 +4,7 @@ NexusCare healthcare SaaS - domain structure, design system, and architecture de
 - nexuscare.io → public marketing site (this project)
 - app.nexuscare.io → customer app / pilot portal
 - staff.nexuscare.io → internal staff portal
-- liaison.nexuscare.io → liaison mobile interface (future)
+- nexuscare-liaison-main.vercel.app → liaison field app (Field Team Login); liaison.nexuscare.io reserved for future custom domain
 
 ## Brand Colors (exact from brand guide)
 - Navy (primary): #0B3A66 / hsl(207 72% 22%)
