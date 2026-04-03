@@ -23,7 +23,8 @@ const TWITTER_HANDLE = '@nexuscare_io';
 interface SEOProps {
   title: string;
   description: string;
-  canonical?: string;
+  /** Absolute canonical URL, or `false` to omit (e.g. noindex error pages). Defaults to SITE_URL when omitted. */
+  canonical?: string | false;
   /** 'website' for homepage, 'article' for blog posts, etc. */
   ogType?: string;
   ogImage?: string;
@@ -41,21 +42,21 @@ export function SEO({
   noindex = false,
   schema = [],
 }: SEOProps) {
-  const canonicalUrl = canonical ?? SITE_URL;
+  const canonicalUrl = canonical === false ? null : (canonical ?? SITE_URL);
 
   return (
     <Helmet>
       {/* ── Primary ──────────────────────────────────────────────────────── */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonicalUrl} />
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       {noindex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* ── Open Graph ───────────────────────────────────────────────────── */}
       <meta property="og:type"        content={ogType} />
       <meta property="og:title"       content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url"         content={canonicalUrl} />
+      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
       <meta property="og:site_name"   content={SITE_NAME} />
       <meta property="og:image"       content={ogImage} />
       <meta property="og:image:width"  content="1200" />

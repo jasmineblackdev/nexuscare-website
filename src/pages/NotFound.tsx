@@ -14,6 +14,7 @@ const NotFound = () => {
       <SEO
         title="Page Not Found — NexusCare"
         description="The page you're looking for doesn't exist."
+        canonical={false}
         noindex={true}
       />
       <div className="text-center">
